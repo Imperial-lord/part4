@@ -1,0 +1,112 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:id="@+id/user"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/usericon"
+            />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Username"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#fff"
+        android:fontFamily="monospace"
+        android:textColor="#ffff"
+        android:textColorHint="#fff"
+        android:id="@+id/user1"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:id="@+id/fav"
+        android:layout_below="@id/user"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ballicon"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColorHint="#fff"
+            android:textColor="#ffff"
+            android:fontFamily="monospace"
+            android:hint="Favorite Team"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#fff"
+            android:id="@+id/fav1"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:backgroundTint="#fff"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fav"
+        android:text="SUBMIT"
+        android:onClick="storeandintent"/>
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/helmet"
+        android:scaleType="fitXY"
+        android:id="@+id/helmet"
+        android:layout_below="@id/button"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ICC CRICKET WC 2019"
+        android:fontFamily="monospace"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        />
+
+
+
+</RelativeLayout>
